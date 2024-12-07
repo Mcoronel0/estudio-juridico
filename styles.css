@@ -1,17 +1,27 @@
-.navbar-logo {
-    width: 50px; /* Ajusta el tamaño del logo */
-    height: auto; /* Mantiene la proporción */
-    display: inline-block;
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* Hero */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar-logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Hero Section */
 .hero {
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
 
-/* Video de fondo */
 .hero-video {
     position: absolute;
     top: 0;
@@ -22,19 +32,10 @@
     z-index: -1;
 }
 
-/* Imagen de fallback */
 .hero-fallback {
-    display: none; /* Solo se muestra si el video no carga */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    display: none; /* Muestra solo si el video falla */
 }
 
-/* Capa de opacidad */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -45,7 +46,6 @@
     z-index: 0;
 }
 
-/* Contenido del Hero */
 .hero-content {
     position: absolute;
     bottom: 30px;
@@ -54,76 +54,62 @@
     text-align: center;
     color: white;
     z-index: 1;
+    padding: 10px;
 }
 
-/* Títulos y botones */
-.hero h1, .hero p {
-    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+.hero-content h1 {
+    font-size: 3rem;
 }
 
-.hero .btn {
+.hero-content p {
+    font-size: 1.25rem;
+}
+
+.hero-content .btn {
     font-size: 1.2rem;
-    padding: 10px 20px;
 }
 
-
-/* Títulos de la sección */
-#nosotros h2 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-#nosotros p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-
-/* Perfiles circulares */
-.img-fluid.rounded-circle {
-    width: 150px; /* Ajusta el tamaño fijo del círculo */
+/* Nosotros Section */
+#nosotros img.rounded-circle {
+    width: 150px;
     height: 150px;
-    border-radius: 50%; /* Crea el marco circular */
-    border: 2px solid #ddd; /* Borde ligero */
-    overflow: hidden; /* Asegura que la imagen no se salga */
-    object-fit: cover; /* Escala la imagen para que llene el contenedor */
-    transition: transform 0.3s, border-color 0.3s; /* Animación suave */
+    object-fit: cover;
+    border: 2px solid #ddd;
+    transition: transform 0.3s;
 }
 
-/* Hover en los círculos */
-.img-fluid.rounded-circle:hover {
-    transform: scale(1.1); /* Efecto de zoom */
-    border-color: #007bff; /* Cambia el color del borde */
-}ba(0, 0, 0, 0.2); /* Sombra más fuerte */
+#nosotros img.rounded-circle:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+}
 
-
-
-/* Textos de Misión y Visión */
 #nosotros h4 {
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+    margin-bottom: 10px;
 }
 
-#nosotros p {
-    color: #555;
-}
-
-/* Hover Cards */
-.card:hover {
-    transform: scale(1.05);
-    transition: 0.3s ease;
-}
-
-
-/* Imagenes de servicios */
+/* Servicios Section */
 .card-img-top {
     height: 200px;
     object-fit: cover;
 }
 
-.modal-content {
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+/* Contacto Section */
+.social-icons i {
+    font-size: 2rem;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.1);
+    color: #007bff;
+}
+
+iframe {
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 /* Botón flotante de WhatsApp */
@@ -148,41 +134,43 @@
     height: 35px;
 }
 
-.whatsapp-button:hover {
-    transform: scale(1.1);
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-/* Títulos de la sección */
-#contacto h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1.5rem;
-}
+/* Media Queries */
+@media (max-width: 767px) {
+    /* Ajustes generales */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
 
-#contacto h4 {
-    font-size: 1.5rem;
-    color: #333;
-}
+    .hero-content p {
+        font-size: 1rem;
+    }
 
-/* Estilo para los íconos de redes sociales */
-.social-icons a {
-    color: #000; /* Color de los iconos */
-    transition: transform 0.3s ease, color 0.3s ease;
-}
+    .hero-content .btn {
+        font-size: 1rem;
+    }
 
-/* Efecto de hover en los iconos */
-.social-icons a:hover {
-    transform: scale(1.1); /* Efecto de zoom */
-    color: #727272; /* Cambio de color al pasar el ratón */
-}
+    #nosotros img.rounded-circle {
+        width: 120px;
+        height: 120px;
+    }
 
-/* Ajuste de tamaño para los iconos */
-.social-icons i {
-    font-size: 2rem; /* Tamaño ajustado */
-}
+    iframe {
+        height: 150px;
+    }
 
-/* Salto de línea entre los iconos de redes y la ubicación */
-.d-md-none {
-        display: block;
-        margin-top: 80px; /* Agrega espacio antes de la sección de ubicación */
+    .social-icons {
+        margin-bottom: 20px;
+    }
+
+    .navbar-logo {
+        width: 80px;
+    }
 }
