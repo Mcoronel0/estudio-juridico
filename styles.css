@@ -78,7 +78,7 @@
     line-height: 1.6;
 }
 
-/* Perfiles circulares */
+
 /* Perfiles circulares */
 .img-fluid.rounded-circle {
     width: 150px; /* Ajusta el tamaño fijo del círculo */
@@ -164,18 +164,19 @@
     color: #333;
 }
 
-/* Iconos de redes sociales */
+/* Estilo para los íconos de redes sociales */
 .social-icons a {
-    color: #555; /* Color inicial de los iconos */
-    transition: color 0.3s ease; /* Efecto suave al pasar el ratón */
+    color: #000; /* Color de los iconos */
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* Efecto de hover en los iconos */
 .social-icons a:hover {
-    color: #007bff; /* Cambia a azul al pasar el ratón */
+    transform: scale(1.1); /* Efecto de zoom */
+    color: #727272; /* Cambio de color al pasar el ratón */
 }
 
-/* Mapas */
-#contacto iframe {
-    border-radius: 8px; /* Bordes redondeados para los mapas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+/* Ajuste de tamaño para los iconos */
+.social-icons i {
+    font-size: 2rem; /* Tamaño ajustado */
 }
