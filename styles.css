@@ -1,0 +1,181 @@
+.navbar-logo {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+    display: inline-block;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video de fondo */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Imagen de fallback */
+.hero-fallback {
+    display: none; /* Solo se muestra si el video no carga */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Capa de opacidad */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Contenido del Hero */
+.hero-content {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+/* Títulos y botones */
+.hero h1, .hero p {
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+
+/* Títulos de la sección */
+#nosotros h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#nosotros p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Perfiles circulares */
+/* Perfiles circulares */
+.img-fluid.rounded-circle {
+    width: 150px; /* Ajusta el tamaño fijo del círculo */
+    height: 150px;
+    border-radius: 50%; /* Crea el marco circular */
+    border: 2px solid #ddd; /* Borde ligero */
+    overflow: hidden; /* Asegura que la imagen no se salga */
+    object-fit: cover; /* Escala la imagen para que llene el contenedor */
+    transition: transform 0.3s, border-color 0.3s; /* Animación suave */
+}
+
+/* Hover en los círculos */
+.img-fluid.rounded-circle:hover {
+    transform: scale(1.1); /* Efecto de zoom */
+    border-color: #007bff; /* Cambia el color del borde */
+}ba(0, 0, 0, 0.2); /* Sombra más fuerte */
+
+
+
+/* Textos de Misión y Visión */
+#nosotros h4 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#nosotros p {
+    color: #555;
+}
+
+/* Hover Cards */
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+
+/* Imagenes de servicios */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+/* Títulos de la sección */
+#contacto h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#contacto h4 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Iconos de redes sociales */
+.social-icons a {
+    color: #555; /* Color inicial de los iconos */
+    transition: color 0.3s ease; /* Efecto suave al pasar el ratón */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Cambia a azul al pasar el ratón */
+}
+
+/* Mapas */
+#contacto iframe {
+    border-radius: 8px; /* Bordes redondeados para los mapas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
