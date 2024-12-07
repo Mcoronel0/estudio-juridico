@@ -180,3 +180,9 @@
 .social-icons i {
     font-size: 2rem; /* Tamaño ajustado */
 }
+
+/* Salto de línea entre los iconos de redes y la ubicación */
+.d-md-none {
+        display: block;
+        margin-top: 80px; /* Agrega espacio antes de la sección de ubicación */
+}
