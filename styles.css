@@ -20,7 +20,7 @@ img, {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh; /* Garantiza que ocupa toda la ventana */
+    height: 80vh; /* Garantiza que ocupa toda la ventana */
     overflow: hidden; /* Evita el desbordamiento */
     display: flex;
     flex-direction: column;
