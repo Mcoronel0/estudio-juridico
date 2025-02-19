@@ -1,9 +1,4 @@
 /* General */
-html,body {
-width:100%;
-overflow-x: hidden;
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
